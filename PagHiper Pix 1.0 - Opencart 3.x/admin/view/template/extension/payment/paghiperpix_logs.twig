@@ -1,0 +1,44 @@
+{{ header }} 
+
+<!--
+* @package    PagHiper Pix Opencart
+* @version    1.0
+* @license    BSD License (3-clause)
+* @copyright  (c) 2020
+* @link       https://www.paghiper.com/
+* @dev        Bruno Alencar - Loja5.com.br
+-->
+
+{{ column_left }} 
+
+<div id="content">
+<div class="page-header">
+<div class="container-fluid">
+<h1>Logs PagHiper Pix</h1>
+<ul class="breadcrumb">
+{% for breadcrumb in breadcrumbs %} 
+<li><a href="{{ breadcrumb['href'] }}">{{ breadcrumb['text'] }}</a></li>
+{% endfor %} 
+</ul>
+
+<div style="max-width:20%;" class="pull-right">
+<a onclick="return confirm('Confirma limpar os logs?')" href="{{ link_remover }}" class="btn btn-danger"><i class="fa fa-times"></i> Limpar</a>
+<a href="{{ link_configurar }}" class="btn btn-info"><i class="fa fa-cog"></i> Configurar</a>
+</div>
+
+</div>
+</div>
+<div class="container-fluid">
+
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><i class="fa fa-pencil"></i> Logs ({{ arquivo }})</h3>
+</div>
+<div class="panel-body">
+<textarea wrap="off" rows="15" readonly class="form-control">{{ log }}</textarea>
+</div>
+</div>
+</div>
+</div>
+
+{{ footer }} 

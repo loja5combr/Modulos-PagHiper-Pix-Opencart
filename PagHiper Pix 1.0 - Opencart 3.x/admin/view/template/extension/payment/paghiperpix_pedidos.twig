@@ -1,0 +1,107 @@
+{{ header }} 
+
+<!--
+* @package    PagHiper Pix Opencart
+* @version    1.0
+* @license    BSD License (3-clause)
+* @copyright  (c) 2020
+* @link       https://www.paghiper.com/
+* @dev        Bruno Alencar - Loja5.com.br
+-->
+
+<script>
+function filtrar_dados(){
+	var tag = $('#tag-filtrar').val();
+	var link = ('{{ link }}').replace(/&amp;/g, '&');
+	location.href = link+'&tag='+tag;
+}
+</script>
+
+{{ column_left }} 
+
+<div id="content">
+<div class="page-header">
+<div class="container-fluid">
+<h1>Pedidos PagHiper Pix</h1>
+<ul class="breadcrumb">
+{% for breadcrumb in breadcrumbs %} 
+<li><a href="{{ breadcrumb['href'] }}">{{ breadcrumb['text'] }}</a></li>
+{% endfor %} 
+</ul>
+
+<div style="max-width:20%;" class="pull-right">
+<div class="input-group">
+<input type="text" id="tag-filtrar" class="form-control" value="{{ tag }}" placeholder="Tags...">
+<span class="input-group-btn">
+<button class="btn btn-primary" onclick="filtrar_dados();" type="button"><i class="fa fa-tag"></i> Filtrar</button>
+</span>
+</div>
+</div>
+
+</div>
+</div>
+<div class="container-fluid">
+
+<div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><i class="fa fa-list"></i> Lista de Pedidos</h3>
+<!-- status -->
+<div class="btn-group btn-group-sm pull-right">
+{% for k,v in status_lista %}
+<a href="index.php?route=extension/payment/paghiperpix/pedidos&user_token={{ token }}&page={{ pagina }}&status={{ k }}&tag={{ tag }}" class="btn btn-default btn-xs{{ status == k?' active':'' }}">{{ v }}</a>
+{% endfor %} 
+</div>
+</div>
+<div class="panel-body">
+
+<table id="pedidos-picpay" class="table table-striped"> 
+<thead> 
+<tr>
+<td>Pedido</td>
+<td>Transa&ccedil;&atilde;o</td>
+<td>Status</td>
+<td>Total</td>
+<td>Pagador</td>
+<td>Data</td>
+<td></td>
+</tr> 
+</thead> 
+
+<tbody> 
+
+{% if (registros) %} 
+
+{% for pedido in registros %}
+
+	<tr>
+	<td>{{ pedido['id_pedido'] }}</td>
+	<td>{{ pedido['transaction_id'] }}</td>
+	<td>{{ pedido['status']|capitalize }}</td>
+	<td>{{ pedido['total_pedido'] }}</td>
+	<td>{{ pedido['pagador'] }}</td>
+	<td>{{ pedido['data']|date('d/m/Y H:i') }}</td>
+	<td>
+	{% if (pedido['status'] == 'iniciado') %} 
+		<a class="btn btn-info btn-sm" href="{{ pedido['pix_url']}}" target="_blank"><i class="fa fa-barcode"></i> Ver QrCode</a>
+	{% endif %} 
+	</td>
+	</tr>
+{% endfor %} 
+{% else %} 
+	<tr>
+	<td colspan="7">Nenhum registro localizado!</td>
+	</tr>
+{% endif %} 
+</tbody> 
+</table>
+
+<div class="row">
+<div class="col-sm-12 text-center">{{ pagination }}</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+{{ footer }}
