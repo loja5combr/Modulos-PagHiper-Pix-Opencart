@@ -26,10 +26,11 @@ https://github.com/loja5combr/Modulos-PagHiper-Pix-Opencart/blob/main/PagHiper%2
 ![Admin](https://i.imgur.com/eidEAe2.png)
 
 4 - Após acessar o Admin de sua loja vá até o menu <b>Extensões > Modificações</b> e no canto superior direito clique no botão para recarregar modificações.
-![Recarregar modificações](https://i.imgur.com/Ljt73lX.png)
+
+![Recarregar modificações](https://i.imgur.com/wX2Z78a.png)
 
 - Recomendamos sempre antes fazer o backup caso sua loja possua algum customização especifica.
-- Em Opencart 3.x existe um cache de templates que deverá ser limpo sempre que for modificado qualquer template da loja e recarregado as modificações, o mesmo é acessado no Admin de sua loja na página inicial e canto superior direito, clique no icone que vai exibir a opção de limpar o cache dos templates.
+- [Em Opencart 3.x existe um cache de templates que deverá ser limpo sempre que for modificado qualquer template da loja e recarregado as modificações, o mesmo é acessado no Admin de sua loja na página inicial e canto superior direito, clique no icone que vai exibir a opção de limpar o cache dos templates](https://i.imgur.com/wX2Z78a.png).
 
 5 - Ainda no painel administrativo de sua loja acesse o menu <b>Extensções > Pagamento</b> localize e instale o módulo <b>PagHiper Pix</b>, caso o mesmo não exiba na lista verifique se os passos anteriores foram feitos corretamente, principalmente a parte de envio dos arquivos ao servidor.
 
