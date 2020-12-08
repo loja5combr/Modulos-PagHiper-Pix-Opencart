@@ -27,9 +27,8 @@ https://github.com/loja5combr/Modulos-PagHiper-Pix-Opencart/blob/main/PagHiper%2
 
 4 - Após acessar o Admin de sua loja vá até o menu <b>Extensões > Modificações</b> e no canto superior direito clique no botão para recarregar modificações.
 
-<i>Atenção 1: Recomendamos sempre antes fazer o backup caso sua loja possua algum customização especifica.</i>
-
-<i>Atenção 2: Em Opencart 3.x existe um cache de templates que deverá ser limpo sempre que for modificado qualquer template da loja e recarregado as modificações, o mesmo é acessado no Admin de sua loja na página inicial e canto superior direito, clique no icone que vai exibir a opção de limpar o cache dos templates.</i>
+- Recomendamos sempre antes fazer o backup caso sua loja possua algum customização especifica.
+- Em Opencart 3.x existe um cache de templates que deverá ser limpo sempre que for modificado qualquer template da loja e recarregado as modificações, o mesmo é acessado no Admin de sua loja na página inicial e canto superior direito, clique no icone que vai exibir a opção de limpar o cache dos templates.
 
 ![Recarregar modificações](https://i.imgur.com/Ljt73lX.png)
 
@@ -37,8 +36,8 @@ https://github.com/loja5combr/Modulos-PagHiper-Pix-Opencart/blob/main/PagHiper%2
 
 6 - Após instalado corretamente, clique em Editar a configuração do mesmo, vai exibir a tela de configuração onde vai pedir as suas credenciais junto a PagHiper, acesse sua conta PagHiper no menu [<b>Minha Conta > Credenciais</b>](https://www.paghiper.com/painel/credenciais/) ira obter os dados qual ira configurar no módulo em sua loja.
 
-<i>Atenção 1: Os campos customizados vai de acordo a loja do cliente, só os configure se sua lojas os possuir.</i>
-<i>Atenção 2: Leia e siga as instruções detalha em cada campo da configuração do módulo.</i>
+- Os campos customizados vai de acordo a loja do cliente, só os configure se sua lojas os possuir.
+- Leia e siga as instruções detalha em cada campo da configuração do módulo.
 
 ![Configuração 1](https://i.imgur.com/QRfbDDB.png)
 ![Configuração 2](https://i.imgur.com/drAJVUV.png)
