@@ -37,13 +37,19 @@ https://github.com/loja5combr/Modulos-PagHiper-Pix-Opencart/blob/main/PagHiper%2
 
 6 - Após instalado corretamente, clique em Editar a configuração do mesmo, vai exibir a tela de configuração onde vai pedir as suas credenciais junto a PagHiper, acesse sua conta PagHiper no menu [<b>Minha Conta > Credenciais</b>](https://www.paghiper.com/painel/credenciais/) ira obter os dados qual ira configurar no módulo em sua loja.
 
-<i>Ps: Os campos customizados vai de acordo a loja do cliente, só os configure se sua lojas os possuir.</i>
+<i>Atenção 1: Os campos customizados vai de acordo a loja do cliente, só os configure se sua lojas os possuir.</i>
+<i>Atenção 2: Leia e siga as instruções detalha em cada campo da configuração do módulo.</i>
 
-![Configuração](https://i.imgur.com/oOq3qLx.png)
+![Configuração 1](https://i.imgur.com/QRfbDDB.png)
+![Configuração 2](https://i.imgur.com/drAJVUV.png)
 
-7 - Configurado o módudo corretamente de acordo com os dados de sua conta e as instruções exibidas em cada campos salve as configurações, feito isso é só testar em caso de erros os logs do mesmo ficam salvos no Admin de sua loja em <b>Vendas ou Pedidos > PagHiper Pix > Logs de erro</b> com o motivo do mesmo, lembrando que o módulo é API, portanto sua loja deverá manter a base de dados do cliente cadastrado corretamente.
+7 - Configurado o módudo corretamente de acordo com os dados de sua conta e as instruções exibidas em cada campos salve as configurações, feito isso é só testar em caso de erros os logs do mesmo ficam salvos no Admin de sua loja em <b>Vendas ou Pedidos > PagHiper Pix > Logs</b> com o motivo do mesmo, lembrando que o módulo é API, portanto sua loja deverá manter a base de dados do cliente cadastrado corretamente.
 
 8 - O retorno de dados é feito automaticamente quando um boleto é pago/cancelado/devolvido, portanto não precisa configurar nenhuma url junto ao sistema da PagHiper, o módulo já faz o processo automaticamente.
+
+# Visualizando Pedidos Pix da Loja
+Para ver e consultar pedidos pix realizados na loja acesse o menu <u>Vendas ou Pedidos > PagHiper Pix > Pedidos</u>, por o mesmo poderá consultar e visualizar pedidos realizados em sua loja via o Pix da PagHiper.
+![Pedidos](https://i.imgur.com/V1YM7sv.png)
 
 # Aplicando Descontos para PagHiper Pix
 
