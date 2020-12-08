@@ -26,11 +26,10 @@ https://github.com/loja5combr/Modulos-PagHiper-Pix-Opencart/blob/main/PagHiper%2
 ![Admin](https://i.imgur.com/eidEAe2.png)
 
 4 - Após acessar o Admin de sua loja vá até o menu <b>Extensões > Modificações</b> e no canto superior direito clique no botão para recarregar modificações.
+![Recarregar modificações](https://i.imgur.com/Ljt73lX.png)
 
 - Recomendamos sempre antes fazer o backup caso sua loja possua algum customização especifica.
 - Em Opencart 3.x existe um cache de templates que deverá ser limpo sempre que for modificado qualquer template da loja e recarregado as modificações, o mesmo é acessado no Admin de sua loja na página inicial e canto superior direito, clique no icone que vai exibir a opção de limpar o cache dos templates.
-
-![Recarregar modificações](https://i.imgur.com/Ljt73lX.png)
 
 5 - Ainda no painel administrativo de sua loja acesse o menu <b>Extensções > Pagamento</b> localize e instale o módulo <b>PagHiper Pix</b>, caso o mesmo não exiba na lista verifique se os passos anteriores foram feitos corretamente, principalmente a parte de envio dos arquivos ao servidor.
 
@@ -58,6 +57,6 @@ Para ver e consultar pedidos pix realizados na loja acesse o menu <u>Vendas ou P
 
 3 - Após instalado acesse <b>Extensões > Modificações</b> e clique no botão atualizar (do opencart não do navegador)
 
-4 - Depois ainda em extensções acesse o menu <b>Totais / Total do Pedido</b> localize e instale o módulo <b>Desconto a vista</b>, edite e informe a % de desconto qual deseja aplicar e o metodo qual deseja aplicar informe: <b>boletopaghiper</b>
+4 - Depois ainda em extensções acesse o menu <b>Totais / Total do Pedido</b> localize e instale o módulo <b>Desconto a vista</b>, edite e informe a % de desconto qual deseja aplicar e o metodo qual deseja aplicar informe: <b>paghiperpix</b>
 
 5 - Pronto é só salvar as configurações
