@@ -155,6 +155,7 @@ class ControllerPaymentPagHiperPix extends Controller {
 		$json['payer_email'] = $pedidos['email'];
 		$json['payer_name'] = $pedidos['payment_firstname'].' '.$pedidos['payment_lastname'];
 		$json['payer_cpf_cnpj'] = $fiscal;
+		$json['partners_id'] = 'P3KGSPVR';
 		$json['payer_phone'] = preg_replace('/\D/', '', $pedidos['telephone']);
 		$json['notification_url'] = $this->url->link('payment/paghiperpix/ipn','','SSL');
 		$json['discount_cents'] = number_format(abs($this->getDescontos()), 2, '', '');
